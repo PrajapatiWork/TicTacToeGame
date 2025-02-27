@@ -4,7 +4,8 @@ let newGameBtn = document.querySelector(".newGameBtn");
 let msgContainer = document.querySelector(".msgContainer");
 let msg = document.querySelector("#msg");
 let count = 0;
-let playerx = true; // player X and player O 
+let playerx = true;  // player X and player O 
+
 const winPaterns = [
     [0, 1, 2],
     [0, 3, 6],
@@ -45,7 +46,6 @@ boxes.forEach((box) => {
             msgContainer.classList.remove("hide");
         }
         checkWinner();
-
     });
 });
 const disableAllBox = () => {
